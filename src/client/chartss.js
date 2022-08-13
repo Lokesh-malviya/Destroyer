@@ -63,7 +63,7 @@ const DemoColumn = () => {
     annotations,
   };
 
-  return <Column {...config} style={{height:"50%",width:"100%",paddingLeft:"10px"}} />;
+  return <Column {...config} style={{height:"30%",width:"80%",paddingLeft:"50px"}} />;
 };
 
 export default DemoColumn;

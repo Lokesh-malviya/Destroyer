@@ -2,20 +2,20 @@ import { Space, Table, Tag } from 'antd';
 import React from 'react';
 const columns = [
   {
-    title: 'Holdings',
-    dataIndex: 'Holdings',
-    key: 'Holdings',
+    title: 'Companies',
+    dataIndex: 'Companies',
+    key: 'Companies',
     render: (text) => <a>{text}</a>,
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
+    title: 'Investment',
+    dataIndex: 'Investment',
+    key: 'Investment',
   },
   {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
+    title: 'Details',
+    dataIndex: 'Details',
+    key: 'Details',
   },
   {
     title: 'Tags',
@@ -26,8 +26,8 @@ const columns = [
         {tags.map((tag) => {
           let color = tag.length > 5 ? 'geekblue' : 'green';
 
-          if (tag === 'loser') {
-            color = 'volcano';
+          if (tag === 'looser') {
+            color = 'red';
           }
 
           return (
@@ -44,8 +44,8 @@ const columns = [
     key: 'action',
     render: (_, record) => (
       <Space size="middle">
-        <a>Invite {record.name}</a>
-        <a>Delete</a>
+        <a>Invest {record.name}</a>
+        <a>Withdraw</a>
       </Space>
     ),
   },
@@ -53,44 +53,44 @@ const columns = [
 const data = [
   {
     key: '1',
-    Holdings: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
+    Companies: 'HDFCBANK',
+    Investment: 32000,
+    Details: 'Expected growth of 2-3% in upcoming days',
     tags: ['nice', 'developer'],
   },
   {
     key: '2',
-    Holdings: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
+    Companies: 'CRED',
+    Investment: 4200,
+    Details: 'Expected decline of 2-3% in upcoming days',
     tags: ['loser'],
   },
   {
     key: '3',
-    Holdings: 'Joe Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
+    Companies: 'PHARMEASY',
+    Investment: 35000,
+    Details: 'Expected growth of 2-3% in upcoming days',
     tags: ['cool', 'teacher'],
   },
   {
     key: '4',
-    Holdings: 'Aditya Bopche',
-    age: 60,
-    address: 'Sidney No. 1 Lake Park',
+    Companies: 'INFOSYS',
+    Investment: 600,
+    Details: 'Expected growth of 2-3% in upcoming days',
     tags: ['cool', 'teacher'],
   },
   {
     key: '5',
-    Holdings: 'Adishree',
-    age: 20,
-    address: 'Sidney No. 1 Lake Park',
+    Companies: 'MYNTRA',
+    Investment: 25000,
+    Details: 'Expected decline of 2-3% in upcoming days',
     tags: ['cool', 'teacher'],
   },
   {
     key: '6',
-    Holdings: 'Prajwal',
-    age: 20,
-    address: 'Sidney No. 1 Lake Park',
+    Companies: 'SWIGGY',
+    Investment: 10000,
+    Details: 'Expected growth of 2-3% in upcoming days',
     tags: ['loser'],
   },
 ];

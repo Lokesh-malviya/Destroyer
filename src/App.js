@@ -8,6 +8,7 @@ import Dashboard from './client/main.js'
 import { connect } from "react-redux";
 import Chat from '/mnt/d/answer/projects/src/client/chat.js';
 import KommunicateChat from '/mnt/d/answer/projects/src/client/chat.js';
+import Change from '/mnt/d/answer/projects/src/client/change.js';
 import {
   BrowserRouter,
   Routes,
@@ -23,6 +24,7 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route exact path="/" element={<Dashboard/>}/>
+      <Route exact path="info" element={<Change/>}/>
       </Routes>
       </BrowserRouter>
       <KommunicateChat/>
